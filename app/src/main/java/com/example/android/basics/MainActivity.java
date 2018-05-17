@@ -40,10 +40,12 @@ public class MainActivity extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                netvalue += 1;
-
+                if (netvalue == random) ;
+                else {
+                    netvalue += 1;
                 netprice.setText("NET PRICE: ₹" + netvalue);
-                check();
+                    check();
+                }
 
             }
         });
@@ -51,33 +53,36 @@ public class MainActivity extends AppCompatActivity {
         two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                netvalue += 2;
-
-                netprice.setText("NET PRICE: ₹" + netvalue);
-                check();
-
+                if (netvalue == random) ;
+                else {
+                    netvalue += 2;
+                    netprice.setText("NET PRICE: ₹" + netvalue);
+                    check();
+                }
             }
         });
         final Button five = (Button) findViewById(R.id.button5);
         five.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                netvalue += 5;
-
-                netprice.setText("NET PRICE: ₹" + netvalue);
-                check();
-
+                if (netvalue == random) ;
+                else {
+                    netvalue += 5;
+                    netprice.setText("NET PRICE: ₹" + netvalue);
+                    check();
+                }
             }
         });
         final Button ten = (Button) findViewById(R.id.button10);
         ten.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                netvalue += 10;
-
-                netprice.setText("NET PRICE: ₹" + netvalue);
-                check();
-
+                if (netvalue == random) ;
+                else {
+                    netvalue += 10;
+                    netprice.setText("NET PRICE: ₹" + netvalue);
+                    check();
+                }
             }
         });
         final Button reset = (Button) findViewById(R.id.buttonr);
